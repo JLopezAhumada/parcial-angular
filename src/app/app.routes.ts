@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { Inventario } from './parcial1/inventario';
+export const routes: Routes = [
+  { path: 'parcial1', component: Inventario },
+  { path: '', redirectTo: 'parcial1', pathMatch: 'full' },
+];
